@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="website_name">MyPortfolio</div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero_section" id="home">
+      <img src="Images/herosection_bg.webp" alt="hero_img" />
+      <div class="intro_section">
+        Hi, my name is <span>Yuvraj</span> and I'm a <span id="element"></span>
+      </div>
+    </section>
+
+    <section class="aboutme_section" id="about">
+      <img src="Images/aboutme_img.avif" alt="aboutme_img" />
+      <div class="aboutme_content">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut
+          dolorem, officiis nemo, natus expedita explicabo nostrum odio
+          distinctio autem eos aliquam. Esse placeat voluptatibus ducimus non
+          magni voluptate, id perferendis dolores deserunt? Numquam nobis amet
+          maiores, accusantium atque suscipit autem sunt quidem impedit
+          laudantium voluptate unde doloribus blanditiis velit.
+        </p>
+
+        <div class="aboutme_subtitles">
+          <div class="skills">
+            <h5 id="skills_heading">Skills</h5>
+            <ul>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>MongoDb</li>
+              <li>Express</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="education">
+            <h5 id="education_heading">Education</h5>
+            <h6>Schooling</h6>
+            <p>Delhi Public School</p>
+            <h6>Graduation</h6>
+            <p>B.com</p>
+            <p>North Eastern Regional Institute of Management (2019-2022)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="download_cv">
+        <a href="Resume.pdf" download class="downloadcv_btn">Download CV</a>
+      </div>
+    </section>
+
+    <section class="services_section" id="services">
+      <div class="servicessection_heading">
+        <h2>My Services</h2>
+      </div>
+      <div class="services_card">
+        <h2>Front-end developer</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste id vero
+          sequi minus, molestiae sed possimus quo quam unde consequuntur?
+        </p>
+      </div>
+      <div class="services_card">
+        <h2 class="servicescard_heading">React.js developer</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste id vero
+          sequi minus, molestiae sed possimus quo quam unde consequuntur?
+        </p>
+      </div>
+      <div class="services_card">
+        <h2 class="servicescard_heading">MERN developer</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste id vero
+          sequi minus, molestiae sed possimus quo quam unde consequuntur?
+        </p>
+      </div>
+    </section>
+
+    <section class="contact_section" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact_leftside">
+        <a href="https://www.linkedin.com/in/yuvraj-barman-64816825b/">
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/Yuvi-888?tab=overview&from=2023-02-01&to=2023-02-28"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div class="contact_rightside">
+        <i class="fa-solid fa-phone"></i><span>+91 6001605985</span>
+        <i class="fa-solid fa-envelope"></i><span>yuvraj.barman15@gmail.com</span>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Front-end developer", "React.js developer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/ec03c223ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
